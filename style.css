@@ -1,0 +1,126 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#header {
+    margin-top: 20px;
+    font-family: 'Salsa', cursive;
+    text-align: center;
+}
+
+/* #formElements {
+    width: 900px;
+    
+    
+} */
+
+
+body {
+        background-image: url("background.jpg");
+}
+
+#taskTime {
+    width: 110px;
+}
+
+#taskDate {
+    width: 115px;
+} 
+
+
+
+.textAreaDesign {
+    background-color: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 29px;
+    height: 190px;
+}
+
+
+.task {
+    border: 2px solid #000;
+    background-color: #bae1ff;
+    width: 180px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 10px;
+    opacity: 1;
+    animation: fadeIn 0.7s ease-in-out;
+    position: relative;
+}
+
+
+.date-time-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.tasks {
+    flex-wrap: wrap;
+}
+
+.hidden-button {
+    visibility: hidden;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+
+.task:hover .hidden-button {
+    visibility: visible /* Show the button on hover */
+}
+
+.taskDateTime {
+    position: absolute;
+    bottom: 1px;
+}
+
+.btn-link {
+    color: black;
+    
+}
+
+.btn-link:hover {
+    color: red;
+}
+
+.editButton {
+    visibility: hidden;
+    position: absolute;
+    right: 20px;
+    top: 1px;
+}
+
+.task:hover .editButton {
+    visibility: visible;
+}
+
+.save-changes-button {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    visibility: hidden;
+}
+
+.strike-line-button {
+    visibility: hidden;
+    position: absolute;
+    top: 1px;
+    right: 40px;
+}
+
+.task:hover .strike-line-button {
+    visibility: visible;
+}
